@@ -9,7 +9,25 @@ return {
           package_uninstalled = "✗",
         },
       },
-      ensure_installed = { "python-lsp-server" },
+      ensure_installed = { "pyright" },
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        pyright = {
+          settings = {
+            python = {
+              analysis = {
+                autoSearchPaths = true,
+                diagnosticMode = "openFilesOnly",
+                useLibraryCodeForTypes = true,
+              },
+            },
+          },
+        },
+      },
     },
   },
 }
