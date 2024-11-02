@@ -4,4 +4,10 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
   },
+  {
+    "LunarVim/bigfile.nvim",
+    opts = {
+      filesize = 2,
+    },
+  },
 }
