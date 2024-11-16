@@ -10,7 +10,7 @@ vim.keymap.set("i", "<C-n>", "<Plug>(copilot-next)", {
   expr = false,
   replace_keycodes = false,
 })
-vim.keymap.set("i", "<C-p>", "<Plug>(copilot-previout)", {
+vim.keymap.set("i", "<C-p>", "<Plug>(copilot-previous)", {
   expr = false,
   replace_keycodes = false,
 })
