@@ -20,10 +20,12 @@ vim.keymap.set("i", "<C-s>", "<Plug>(copilot-suggest)", {
 })
 vim.g.copilot_no_tab_map = true
 
-vim.api.nvim_set_keymap("n", "<C-a>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "<C-a>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<Leader>a", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("v", "<Leader>a", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Leader>ai", "<cmd>CodeCompanion<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<Leader>ai", "<cmd>CodeCompanion<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Leader>aa", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<Leader>aa", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Leader>ac", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<Leader>ac", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "ga", "<cmd>CodeCompanionChat Add<cr>", { noremap = true, silent = true })
 
 -- Expand 'cc' into 'CodeCompanion' in the command line
