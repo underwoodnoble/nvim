@@ -13,5 +13,27 @@ return {
       { "stevearc/dressing.nvim", opts = {} }, -- Optional: Improves `vim.ui.select`
     },
     config = true,
+    keys = {
+      {
+        "<Leader>ai",
+        "<cmd>CodeCompanion<cr>",
+        mode = { "n", "v" },
+      },
+      {
+        "<Leader>aa",
+        "<cmd>CodeCompanionActions<cr>",
+        mode = { "n", "v" },
+      },
+      {
+        "<Leader>ac",
+        "<cmd>CodeCompanionChat Toggle<cr>",
+        mode = { "n", "v" },
+      },
+      {
+        "ga",
+        "<cmd>CodeCompanionChat Add<cr>",
+        mode = { "v" },
+      },
+    },
   },
 }
