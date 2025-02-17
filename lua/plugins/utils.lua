@@ -10,4 +10,7 @@ return {
       filesize = 2,
     },
   },
+  {
+        "skywind3000/asyncrun.vim",
+  },
 }
