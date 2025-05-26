@@ -17,16 +17,15 @@ return {
     opts = {
       servers = {
         pyright = {
-          settings = {
-            python = {
-              analysis = {
-                autoSearchPaths = true,
-                diagnosticMode = "openFilesOnly",
-                useLibraryCodeForTypes = true,
-                typeCheckingMode = "on",
-              },
-            },
+          disableOrganizeImports = true,
+        },
+        python = {
+          analysis = {
+            ignore = { "*" },
           },
+        },
+        clangd = {
+          filetypes = { "c", "cpp", "cuda", "cu", "cuh" },
         },
       },
     },

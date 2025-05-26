@@ -18,6 +18,7 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
     config = function()
       require("neo-tree").setup({
+        auto_reveal = true,
         commands = {
           copy_selector = function(state)
             local node = state.tree:get_node()
@@ -64,5 +65,8 @@ return {
         },
       })
     end,
+  },
+  {
+    "sindrets/diffview.nvim",
   },
 }
