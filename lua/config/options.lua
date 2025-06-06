@@ -27,3 +27,6 @@ vim.opt.incsearch = true -- search as characters are entered
 vim.opt.hlsearch = true -- highligth matches
 vim.opt.ignorecase = true -- ignore case in searches by default
 vim.opt.smartcase = true -- make it case sensitive if an uppercase is entered
+
+-- trun off swapfile
+vim.o.swapfile = false
